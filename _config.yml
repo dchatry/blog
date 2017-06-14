@@ -1,5 +1,6 @@
 title: Damien Chatry
 description: I write about stuff like web development, Drupal, python, design, etc.
 show_downloads: false
+baseurl: /blog
 google_analytics:
 theme: 
