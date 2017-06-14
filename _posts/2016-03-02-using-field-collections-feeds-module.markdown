@@ -13,7 +13,7 @@ Importing content with [Feeds][1] can be a little tricky, especially when dealin
 
 Consider the following data model: 
 
-<img src="using-field-collections-feeds-module/images/datam_1103151.png" alt="datam_110315" class="aligncenter size-full wp-image-157" />
+<img src=""/blog/assets/articles/images/datam_1103151.png" alt="datam_110315" class="aligncenter size-full wp-image-157" />
 
 Let's say we have already imported the customers into our Drupal database, the customer entity is just 4 fields: a *unique* **id** (*field_customer_id*), a **name**, an **address** and an **orders** field collection (*field_customer_orders*). From a Drupal standpoint, the **orders** field collection consists of 2 fields: the **item** ordered and the **order date**. 
 ## Feed configuration
@@ -28,8 +28,8 @@ Finally, we need to tell the processor which field to use when linking the order
 
 Don't forget to enable the **Is field** checkbox, that way the processor knows that our GUID is a field and not a property (a property could be *title*, *nid* etc). 
 
-<img data-action="zoom" src="using-field-collections-feeds-module/images/3.png" alt="3" class="aligncenter size-full wp-image-162" /> The processor is almost configured, we just need to map the fields from the CSV file to the field collection fields. 
-<img data-action="zoom" src="using-field-collections-feeds-module/images/4.png" alt="4" class="aligncenter size-full wp-image-163" />
+<img data-action="zoom" src=""/blog/assets/articles/images/3.png" alt="3" class="aligncenter size-full wp-image-162" /> The processor is almost configured, we just need to map the fields from the CSV file to the field collection fields. 
+<img data-action="zoom" src="/blog/assets/articles/images/4.png" alt="4" class="aligncenter size-full wp-image-163" />
 
 The link with the host entity (customer) is done via the target "Host Entity GUID". 
 
@@ -48,8 +48,8 @@ We're done! Now we can import the CSV file containing the orders, for example:
 
 That's it! The orders have been imported and linked to their respective customers: 
 
-<img data-action="zoom" src="using-field-collections-feeds-module/images/5.png" alt="5" class="aligncenter size-full wp-image-159" /> If you want to try this configuration by yourself, here is the [exported feed configuration][3].
+<img data-action="zoom" src=""/blog/assets/articles/images/5.png" alt="5" class="aligncenter size-full wp-image-159" /> If you want to try this configuration by yourself, here is the [exported feed configuration][3].
 
  [1]: https://www.drupal.org/documentation/modules/feeds
  [2]: https://www.drupal.org/project/field_collection_feeds
- [3]: /home/using-field-collections-feeds-module/feed.txt
+ [3]: /blog/assets/articles/feed.txt
