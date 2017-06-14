@@ -1,2 +1,1 @@
-# blog
-Jekyll blog
+# Personal blog
