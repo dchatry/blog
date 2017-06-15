@@ -10,7 +10,8 @@ taxonomy:
 
 After failing to configure [Conditional Fields][1] to show fields depending on whether or not a `nodereference` autocomplete field was filled, I came to the conclusion that it would be easier to code a custom behavior by overriding *Drupal's default autocomplete methods*.
 
-<pre><code>(function ($) {
+```javascript
+(function ($) {
   if (Drupal.jsAC) {
     // Override autocomplete method and add trigger
     // to retrieve the selected node.
@@ -36,12 +37,12 @@ After failing to configure [Conditional Fields][1] to show fields depending on w
     });
   });
 })(jQuery);
-</code>
-</pre>
+```
 
 Now with a practical use case, let's say we want to **show or hide** a field depending on `nodereference` autocomplete field. But we don't want the field to show if the content of the autocomplete field is not valid (it should contain the node title and the nid between brackets, just like this: `TITLE [nid:NID]`.
 
-<pre><code>(function ($) {
+```javascript
+(function ($) {
   if (Drupal.jsAC) {
     // Override autocomplete method and add trigger
     // to retrieve the selected node.
@@ -94,11 +95,10 @@ Now with a practical use case, let's say we want to **show or hide** a field dep
     }
   });
 })(jQuery);
-</code>
-</pre>
+```
 
 *<u>Note</u>: if you're using <u>Drupal 6</u>, use this code instead:*
-
+```javascript
 <pre><code>(function ($) {
   if (Drupal.jsAC) {
     // Override autocomplete method and add trigger
@@ -125,7 +125,6 @@ Now with a practical use case, let's say we want to **show or hide** a field dep
     });
   });
 })(jQuery);
-</code>
-</pre>
+```
 
  [1]: https://www.drupal.org/project/conditional_fields
