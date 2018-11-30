@@ -75,7 +75,7 @@ except Exception as e:
 browser.close()
 ```
 
-And voilà! You get a notification on your phone as soon as a slot is free so you can be the first to book it! (thank you [IFTTT](http://ifttt.com/) for your wonderful webhooks!
+And voilà! You get a notification on your phone as soon as a slot is free so you can be the first to book it! (thank you [IFTTT](http://ifttt.com/) for your wonderful webhooks)
 
 Now you can add this to your crontab with by adding the line:
 ```
