@@ -77,8 +77,8 @@ browser.close()
 
 And voilà! You get a notification on your phone as soon as a slot is free so you can be the first to book it! (thank you [IFTTT](http://ifttt.com/) for your wonderful webhooks)
 
-Now you can add this to your crontab with by adding the line:
+Now you can add this to your crontab by adding the line:
 ```
 0-59 * * * 1-5 /usr/local/bin/python3 /path_to_script/script.py
 ```
-This will check every minute every opening day but you can tweak it to your liking!
+This will check every minute every opening day, but you can tweak it to your liking!
