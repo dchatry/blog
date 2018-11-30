@@ -8,7 +8,7 @@ taxonomy:
     tag: [drupal]
 ---
 
-Let me introduce you to a quick script if you want to monitor a web page for changes. We are going to use [Selenium](https://www.seleniumhq.org/) (with Python 3) which is a framework allowing you to emulate a browser and control it entirely (meaning you can also interact, click, scroll, etc. with anything). It is especially useful for automating tests, but it's not its purpose today!
+Here is a quick script that can be very useful if you want to monitor a web page for changes. We are going to use [Selenium](https://www.seleniumhq.org/) (with Python 3) which is a framework allowing you to emulate a browser and control it entirely (meaning you can also interact, click, scroll, etc. with anything). It is especially useful for automating tests, but it's not its purpose today!
 
 In my case, I wanted to check if my local clinic (which is always busy) had any appointment available. Luckily they provide a website where you can specify the reason for the appointment (so one click) and it tells you if there are any slots available.
 
