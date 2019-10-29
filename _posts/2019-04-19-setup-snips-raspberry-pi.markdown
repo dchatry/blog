@@ -353,14 +353,4 @@ Certains composants ne sont malheureusement pas configurables aussi facilement, 
 
 
 
-Configurer les devices dans el configuration.yaml
-
-Rajouter le mqtt broker de snips 
-
-127.0.0.1
-
-1883
-
-
-
 
